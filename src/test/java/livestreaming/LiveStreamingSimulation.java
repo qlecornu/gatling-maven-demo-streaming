@@ -69,7 +69,7 @@ public class LiveStreamingSimulation extends Simulation {
 
     private static Session computeSectionSegment(Session session) {
         long currentTimestamp = Instant.now().getEpochSecond();
-        long sectionSegment = (long) Math.floor(currentTimestamp / 2) - 100; //FIX THE CLOCK
+        long sectionSegment = (long) Math.floor(currentTimestamp / 2) - 100;
 
         return session.set("sectionSegment", String.valueOf(sectionSegment));
     }
