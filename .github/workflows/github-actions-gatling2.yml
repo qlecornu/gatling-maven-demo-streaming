@@ -4,7 +4,7 @@ name: Run Gatling Enterprise Simulation 2
 on:
   push:
     branches:
-      - main
+      - master
 
 # Here we use concurrency to cancel previous executions if they are still
 # ongoing. Useful to avoid running the same simulation several times
